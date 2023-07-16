@@ -24,10 +24,10 @@ const length = e.target.value.length;
 if(length === Number(input.dataset.length)){
     // input.classList.add('valid');
     // input.classList.remove('invalid');
-    return classSet('valid');
-} else {
+    classSet('valid', 'invalid');
+}else {
     // input.classList.add('invalid');
     // input.classList.remove('valid');
-    return classSet('invalid');
+    classSet('invalid', 'valid');
 }
 }
