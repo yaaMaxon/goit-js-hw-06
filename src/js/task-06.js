@@ -13,16 +13,21 @@ const input = document.getElementById('validation-input');
 
 input.addEventListener('blur', onInput);
 
+function classSet(a, b) {
+    input.classList.add(a);
+    input.classList.remove(b);
+}
+
 function onInput(e) {
 const length = e.target.value.length;
 
 if(length === Number(input.dataset.length)){
-    input.classList.add('valid');
-    input.classList.remove('invalid');
-    
+    // input.classList.add('valid');
+    // input.classList.remove('invalid');
+    return classSet('valid');
 } else {
-    input.classList.add('invalid');
-    input.classList.remove('valid');
-    
+    // input.classList.add('invalid');
+    // input.classList.remove('valid');
+    return classSet('invalid');
 }
 }
