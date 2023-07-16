@@ -21,6 +21,3 @@ function minusBtn() {
    counterValue -= 1;
    value.textContent = `${counterValue}`;
 }
-
-console.dir(value);
-console.dir(counterValue);

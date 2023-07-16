@@ -36,5 +36,3 @@ list.style.listStyle = 'none';
 
 
 list.insertAdjacentHTML("beforeend", img);
-
-console.dir(list);

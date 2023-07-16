@@ -12,8 +12,5 @@ input.addEventListener('input', onInput);
 function onInput(e) {
 textSize.style.fontSize = `${e.target.value}px`;
 
-console.dir(e.target.value);
-}
 
-console.dir(input);
-console.dir(textSize);
+}

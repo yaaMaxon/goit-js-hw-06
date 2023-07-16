@@ -21,18 +21,16 @@ function onSubmit(e) {
     e.preventDefault();
 
     const {email, password} = e.currentTarget.elements;
+    
+    if (email.value.trim() === '' || password.value.trim() === '') {
+     return alert ('Присутні не заповнені поля');
+    }
+
     const data = {
     email: email.value,
     password: password.value,
     }
 
-    if (email.value === '' || password.value === '') {
-     return alert ('Присутні не заповнені поля');
-    }
-
-
-    console.log(data);
-    console.dir(form);
     form.reset();
 }
 

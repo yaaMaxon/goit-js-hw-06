@@ -16,18 +16,13 @@ input.addEventListener('blur', onInput);
 function onInput(e) {
 const length = e.target.value.length;
 
-if(length === 6){
+if(length === Number(input.dataset.length)){
     input.classList.add('valid');
     input.classList.remove('invalid');
     
-    console.dir('true')
 } else {
     input.classList.add('invalid');
     input.classList.remove('valid');
-
-    console.dir('false')
+    
 }
 }
-
-console.log(input.dataset.length);
-console.dir(input);

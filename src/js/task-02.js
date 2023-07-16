@@ -18,16 +18,16 @@ const ingredients = [
 
 
 const list = document.querySelector('#ingredients');
+let array = [];
 
 for (const ingredient of ingredients) {
+
   const li = document.createElement('li');
   li.className = 'item';
   li.textContent = ingredient;
-  list.append(li);
-
-  console.dir(li);
+  array.push(li);
+  
 }
 
+list.append(...array);
 
-
-console.dir(list);

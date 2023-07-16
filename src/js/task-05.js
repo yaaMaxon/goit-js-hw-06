@@ -10,8 +10,6 @@ let anonymous = "Anonymous";
 input.addEventListener('input', onInput);
 
 function onInput(e) {
-    output.textContent = `${e.target.value || anonymous}`;
+    output.textContent = e.target.value.trim() || anonymous;
 }
 
-console.dir(input);
-console.dir(output);
